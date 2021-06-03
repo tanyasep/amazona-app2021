@@ -6,7 +6,8 @@ import { listProducts } from '../actions/productActions.js';
 import { useDispatch, useSelector } from 'react-redux';
 
 export default function HomeScreen() {
-  /* use redux to handle react hook 
+  /*pooh_memo 
+    use redux to handle react hook 
     no need setProduct, loading, error anymore
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false); //set to false because at initial state not load anything
@@ -18,6 +19,7 @@ export default function HomeScreen() {
 
     useEffect(() => {
       /*
+      pooh_memo
       after add redux
       get data from Action instead
 
