@@ -147,9 +147,35 @@
         1. npx create-react-app frontend 
         2. npm start
         3. delete App.css, App.test.js, logo.svg, setupTests.js
-        Part 05- Create React App  
+        
+        https://github.com/basir/amazona/pull/8/files
     
-    
+      Part 05- build product screen
+        1.install react-router-dom
+        2. use BrowserRouter and Route for Home Screen
+        3. Create HomeScreen.js
+        4. Add product list code there
+        5. Create ProductScreen.js
+        6. ass new route from product details to App.js
+        7. create 3 columns for product image, info and action
+
+      part 09: create nodeJs server
+        --fix Cannot use import statement outside a module error
+          1. go to package.jason
+          right after "name": "project name" add "type": "module"
+          works in node 12+
+        --use nodemon in dev, only watch changes in backend folder 
+        if change 'node --experimental-modules backend/server.js' wil run
+        'experimental-modules' make it possible to use ES6
+        "start" : "nodemon --watch backend --exec node --experimental-modules backend/server.js"  
+
+      part 10-loas product from backend
+        --to use path without http: like .post(/api/path) config in frontend/packgage.jason
+          "proxy": "http://localhost:8800/api" will redirect to backend 
+        --after rendering component useEffect will run only 1 time, accept 2 parameter function and array
+
+      reach part 14
+
     -->
 
   </body>
