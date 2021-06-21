@@ -5,6 +5,7 @@ import userRouter from './routers/userRouter.js';
 import productRouter from './routers/productRouter.js';
 import dotenv from 'dotenv';
 import config from './config.js'; //not necessary actually
+import orderRouter from './routers/orderRouter.js';
 
 dotenv.config();
 const app = express();
@@ -34,6 +35,8 @@ mongoose.connect(mongodbUrl, {
 // }); //get data from data.js not database
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
+app.use('/api/orders', orderRouter);
+
 app.get('/', (req, res) => {
   res.send('Server is ready');
 });
